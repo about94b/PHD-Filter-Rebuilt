@@ -1,0 +1,19 @@
+function [ axes_list,theta_list,lam_error,sam_error ] = ...
+    williamsGeneral( input_lc,object,num_axes,num_theta )
+%WILLIAMSGENERAL Locates possible angular momentum-angle combinations for
+%an input light curve and object. Returns results for both long-axis mode
+%and short-axis mode rotations.
+%   [ axes_list,theta_list,lam_error,sam_error ] = 
+%               williamsGeneral( input_lc,object,num_axes,num_theta )
+%   Inputs: input_lc - nx1 array, light curve to process
+%           object - reflector object, object producing the light curve
+%           num_axes - scalar, the number of angular momentum axes to test
+%           num_theta - scalar, the number of angles tested per axis
+%   Outputs: axes_list, 3 x num_axes array, unit vectors for the angular
+%              momentum vectors tested (one vector per column)
+%           theta_list - num_theta x 1 array, list of theta values
+%           lam_error - num_axes x num_theta array, the error fraction
+%           between each axis-angle combination's 
+outputArg1 = inputArg1;
+outputArg2 = inputArg2;
+end
